@@ -1,5 +1,5 @@
 N, M = map(int, input().split())
-MAX = 10000
+MAX = 1000 * 1000
 pos_a, pos_b = [0] * (MAX + 1), [0] * (MAX + 1)
 
 # Process A's movements
