@@ -24,11 +24,9 @@ while t > 0:
         dir_num = 3 - dir_num
         t -= 1
     # 이동
-    r, c = r + dxs[dir_num], c + dys[dir_num]
-    t -= 1
+    if t > 0:
+        r, c = r + dxs[dir_num], c + dys[dir_num]
+        t -= 1
     #print(r, c)
 
 print(r, c)
-
-
-
