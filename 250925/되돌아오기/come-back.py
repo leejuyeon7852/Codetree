@@ -20,7 +20,6 @@ for _ in range(N):
     dir, dist = input().split()
     dist = int(dist)
     dir_num = direction[dir]
-    nx, ny = 0, 0
     for _ in range(dist):
         time += 1
         x, y = x+dx[dir_num], y+dy[dir_num]
@@ -30,9 +29,11 @@ for _ in range(N):
         #print(f'x:{x}, y:{y}, time: {time}')
     if stop:
         break;
-    else:
-        time = -1
 
-print(time)
+
+if stop:
+    print(time)
+else:
+    print(-1)
 
 
