@@ -19,8 +19,8 @@ def is_valid(x, y, arr):
         if in_range(nx, ny) and arr[nx][ny] == 1:
             count += 1
             #print(f'arr[{nx}][{ny}]:{arr[nx][ny]}, count:{count}')
-        if count >= 3:
-            return 1 
+    if count == 3:
+        return 1 
     return 0
 
 for _ in range(m):
