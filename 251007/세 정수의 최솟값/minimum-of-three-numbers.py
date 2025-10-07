@@ -2,11 +2,11 @@ a, b, c = map(int, input().split())
 
 min = 101
 
-if a <= b and b <= c:
+if a <= b and a <= c:
     min = a
 elif b <= a and b <= c:
     min = b
-else:
+elif c <= a and c <= b:
     min = c
 
 print(min)
