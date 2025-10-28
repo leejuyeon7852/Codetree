@@ -5,7 +5,7 @@ flag = False
 for i in range(1, len(a)):
     if a[i] == 0:
         a[i] = 1
-        falg = True
+        flag = True
         break
 if flag == False:
     a[len(a)-1] = 0
