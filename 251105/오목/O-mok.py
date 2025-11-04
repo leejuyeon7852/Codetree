@@ -41,7 +41,7 @@ for i in range(n):
                             break
                 else:
                     print(1)
-                    print(i - 2, j + 3)
+                    print(i - 1, j + 3)
                     sys.exit()
         # 흰색
         if board[i][j] == 2:
@@ -79,6 +79,6 @@ for i in range(n):
                         break
                 else:
                     print(2)
-                    print(i - 2, j + 3)
+                    print(i - 1, j + 3)
                     sys.exit()
 print(0)
