@@ -32,7 +32,7 @@ for i in range(n):
                     width = abs(x2-x3)
                     area = max(area, height*width)
                 if y2 == y1:
-                    ans = max(ans, height * abs(x2 - x1))
+                    area = max(area, height * abs(x2 - x1))
 
 print(area)
                 
