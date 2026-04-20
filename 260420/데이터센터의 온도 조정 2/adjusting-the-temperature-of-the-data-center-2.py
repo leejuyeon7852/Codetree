@@ -11,12 +11,13 @@ def get_amount(temp,ta, tb):
     else:
         return H
 
-candidates = []
+candidates = [0]
 for ta, tb in ranges:
     candidates.append(ta)
     candidates.append(tb)
+    candidates.append(tb + 1)
     
-for temp in candidates:
+for temp in sorted(set(candidates)):
     total = sum(get_amount(temp, ta, tb) for ta, tb in ranges)
     if total > max_total:
         max_total = total
