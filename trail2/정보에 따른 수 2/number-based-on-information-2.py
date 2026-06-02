@@ -1,13 +1,9 @@
 from collections import defaultdict
 
 T, a, b = map(int, input().split())
-c = []
-x = []
 d = defaultdict(list)
 for _ in range(T):
     char, pos = input().split()
-    c.append(char)
-    x.append(int(pos))
     d[char].append(int(pos))
     
 
