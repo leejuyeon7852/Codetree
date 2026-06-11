@@ -9,7 +9,6 @@ for i in range(N):
     for j in range(N):
         if 0 <= arr[j] - arr[i] <= K:
             lst.append(arr[j])
-    if max(lst) - min(lst) <= K:
-        max_length = max(max_length, len(lst))
+    max_length = max(max_length, len(lst))
 
 print(max_length)
