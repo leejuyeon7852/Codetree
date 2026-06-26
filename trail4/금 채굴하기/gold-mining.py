@@ -5,7 +5,7 @@ def diamond_sum(grid, cx, cy, k, n):
     total = 0
     for r in range(n):
         for c in range(n):
-            if abs(r-cx) + abs(c-cy) <= k:
+            if abs(r-cx) + abs(c-cy) <= k: # 맨해튼 거리
                 total += grid[r][c]
     return total
 
